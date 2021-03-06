@@ -27,19 +27,19 @@ FITNESS_CHOICE = 1
 #   5. Griewank Function (http://www-optima.amp.i.kyoto-u.ac.jp/member/student/hedar/Hedar_files/TestGO_files/Page1905.htm)
 #   6. Zakharov Function (http://www-optima.amp.i.kyoto-u.ac.jp/member/student/hedar/Hedar_files/TestGO_files/Page3088.htm)
 
-SELECTION_CHOICE = 1
+SELECTION_CHOICE = 1    
 
 #   SELECTION_CHOICE refers to how the population is manipulated in regards to the parents and offspring
 #   1. Roulette Wheel Selection
 #   2. Steady State Selection
 
-MUTATION_CHOICE = 1
+MUTATION_CHOICE = 2
 
 #   MUTATION_CHOICE refers to how the offspring is mutated.
 #   1. Single gene mutation - One gene is picked at random, and changed by -5<= x <= 5
 #   2. Multi gene mutation - Multiple genes are picked at random and changed by -5<= x <= 5
 
-CROSSOVER_CHOICE = 1
+CROSSOVER_CHOICE = 2
 
 #   CROSSOVER_CHOICE refers to how the offspring are produced from the parents
 #   1. Middle point crossover - half of Parent 1 and half of Parent 2 are put together to create 2 new offspring
@@ -47,22 +47,22 @@ CROSSOVER_CHOICE = 1
 
 ## Test Bed Options (Because I don't want to 'rigorously evaluate' my GA implementation manually)
 RUN_TESTS = True
-CHANGED_VAR = "CROSSOVER"
+CHANGED_VAR = "NONE"
 # Options include: POPULATION , MUTATION, CROSSOVER, PARENT_NO, NONE
 # NOTE: "NONE" will just run NO_OF_TESTS runs of GA, not varying the variables
-DIFFERENCE = 0.01
+DIFFERENCE = 0.1
 # Absolute difference between tests. i.e. if DIFFERENCE = 0.2 and CHANGED_VAR = "MUTATION",
 # one run will have a mutation rate of 0.2, and the next would have one of 0.4
 START_VAL = 0
 # Starting value for CHANGED_VAR. i.e. if START_VAL = 50, DIFFERENCE = 10 and CHANGED_VAR = "POPULATION"
 # The first run will have a population of 50, the next has 60, and the next has 70.
-NO_OF_TESTS = 100
+NO_OF_TESTS = 10
 # The number of GA runs, with the varying var. i.e. NO_OF_TESTS = 3, START_VAL = 50, DIFFERENCE = 10 and CHANGED_VAR = "POPULATION"
 # There'd be three runs of the GA, with the population at 50,60,70. If NO_OF_TESTS = 4, there'd be 4 at 50,60,70,80
 
 ## Default Global Variables 
 POPULATION_SIZE = 30
-GENERATIONS = 10
+GENERATIONS = 50
 SOLUTION_FOUND = False
 
 CROSSOVER_RATE = 0.6
