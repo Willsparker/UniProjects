@@ -9,3 +9,5 @@ The work is demonstrated in the *.py* files in *VI-2020-21-Python_Package/*. Unf
 The Freenect Framework (and argument parser) in *cv-demo.py* was provided as part of the assignment. The rest of the code is my own. 
 
 The assignment was originally expected to run in a virtual environment, hence why there's no information on setting up Freenect, and why the python files are unlikely to work out the box - these are more just for reference, I suppose :-) Examples of the object recognition working can be found in the Report PDf anyway. 
+
+Mark out of 100: 95
